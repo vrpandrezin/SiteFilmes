@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WatchSomething</title>
+    <link rel="stylesheet" href="style/homepage.css">
+    <link rel="stylesheet" href="style/fonts.css">
+</head>
+<body>
+    <!-- Navigation links -->
+    <nav>
+        <ul>
+            <li><a href="movies/latest-movies.html">Filmes</a></li>
+            <li><a href="series/series-latest.html">Programas de TV</a></li>
+            <li><a id="aboutLink">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <!-- Title section -->
+    <section class="title">
+        <h1>Prime<span><img src="images/glasses.svg" width="45px" height="45px" alt="Eye"></span>Flix</h1>
+        <p>Sem ideia do que assistir? Encontre filmes ou programas de TV para assistir instantaneamente ou salve-os em listas para mais tarde!</p>
+        <p id="quote"></p>
+    </section>
+
+    <!-- Popular movies section -->
+    <section class="popularMovies popular">
+        <h2 class="popularTitle">Filmes Populares <span><i class="material-icons hot">o que ha de novo</i></span></h2>
+        <a href="movies/popular-movies.html">Veja mais...</a>
+        <!-- Movies output -->
+        <div id="movies" class="scroll"></div>
+    </section>
+
+    <!-- Popular TV Shows section -->
+    <section class="popularTvShows popular">
+        <h2 class="popularTitle">Programas de Tv Populares <span><i class="material-icons hot">o que ha de novo</i></span></h2>
+        <a href="series/series-popular.html">Veja mais...</a>
+        <!-- TV Shows output -->
+        <div id="tvShows" class="scroll"></div>
+    </section>
+
+    <!-- See more section -->
+    <section class="seeMore">
+        <h2>Para mais opções, clique em um dos botões abaixo:</h2>
+        <div class="seeMore_buttons">
+            <!-- Movies -->
+            <a href="movies/top-rated.html">Filmes</a>
+            <!-- TV Shows -->
+            <a href="series/series-toprated.html">Programas</a>
+        </div>
+    </section>
+
+    <!-- Now Playing section -->
+    <section class="nowPlaying">
+        <h1>Assista Agora!</h1>
+        <p id="nowPlayingText">Filmes que estão passando nos cinemas agora. Encontre os filmes mais recentes <a href="movies/latest-movies.html">aqui</a>.</p>
+        <!-- Now Playing output -->
+        <div id="nowPlaying" class="scroll"></div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="aboutSection">
+        <h1>Sobre</h1>
+        <p>Este site usa a API <a href="https://themoviedb.org">themoviedb.org</a> para ajudá-lo a encontrar filmes e programas de TV para assistir com facilidade. Você pode: </p>
+        <div class="about_boxes">
+            <!-- Movies box -->
+            <div class="moviesBox box">
+                <h3>Filmes</h3>
+                <p>Veja nossa lista dos filmes mais bem avaliados, populares, mais recentes e futuros para encontrar algo bom para assistir. Pesquise por ano, título, ator ou gênero.</p>
+                <div class="boxImg">
+                    <i class="material-icons boxIcon">theaters</i>
+                </div>
+            </div>
+            <!-- TV SHOWS box -->
+            <div class="tvShowsBox box">
+                    <h3>Programas de TV</h3>
+                    <p>Mais votado, popular, no ar... o que você precisar. Você também pode pesquisar programas de TV por ano, título ou gênero.</p>
+                    <div class="boxImg">
+                        <i class="material-icons boxIcon">tv</i>
+                    </div>
+            </div>
+            <!-- Lists box -->
+            <div class="listsBox box">
+                    <h3>Listas</h3>
+                    <p>Adicione filmes e programas a uma lista de favoritos e lista de favoritos, para que você possa acompanhar o que precisa assistir ou o que adora! Ou talvez obter ajuda com algumas recomendações.</p>
+                    <div class="boxImg">
+                        <i class="material-icons boxIcon">visibility</i>
+                    </div>
+            </div>
+            <!-- Details box -->
+            <div class="detailsBox box">
+                    <h3>Detalhes</h3>
+                    <p>Obtenha informações detalhadas sobre cada filme ou programa de TV, incluindo trailers e recomendações de filmes/programas de TV semelhantes.</p>
+                    <div class="boxImg">
+                        <i class="material-icons boxIcon">description</i>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Site name & popcorn -->
+    <div class="popcorn">
+        <a href="index.html">PrimeFlix <span><img src="images/popcorn.svg" width="32px" alt="Popcorn"></span></a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Links -->
+        <div class="links">
+            <div class="moviesLinks">
+                <h3>Filmes</h3>
+                <ul>
+                    <li><a href="movies/top-rated.html">Bem Avaliado</a></li>
+                    <li><a href="movies/popular-movies.html">Popular</a></li>
+                    <li><a href="movies/latest-movies.html">Recentes</a></li>
+                    <li><a href="movies/search-movies.html">Procurar</a></li>
+                </ul>
+            </div>
+            <!-- Tv Shows page links -->
+            <div class="tvShowsLinks">
+                <h3>Programas de TV</h3>
+                <ul>
+                    <li><a href="series/series-toprated.html">Bem Avaliado</a></li>
+                    <li><a href="series/series-popular.html">Popular</a></li>
+                    <li><a href="series/series-latest.html">Ao vivo</a></li>
+                    <li><a href="series/search-series.html">Procurar</a></li>
+                </ul>
+            </div>
+            <!-- GitHub link -->
+            <div class="githubLink">
+                <h3>&copy; 2022</h3>
+                <!--<p>GitHub link: </p>
+                <a href="https://github.com/pecko95/WatchSomething/" target="somethingUnique"><img src="images/github.svg" width="32px" alt="GitHub"></a>-->
+            </div>
+        </div>
+        <!-- Deadpool image -->
+        <div class="deadpool">
+            <img src="images/deadpool.png" width="330px" alt="Deadpool...">
+        </div>
+        <!-- Credits -->
+       <!-- <div class="credits">
+            <a href="https://themoviedb.org" target="somethingUnique"><img src="images/tmdb2.svg" width="150px" alt="TMDB - The movie database."></a>-->
+        </div>
+    </footer>
+</body>
+<script src="scripts/config.js"></script>
+<script src="scripts/homePage.js"></script>
+<!-- Axios link -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</html>
